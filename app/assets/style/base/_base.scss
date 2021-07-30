@@ -1,0 +1,29 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-size: $base-font-size;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    height: auto;  //RWD圖片必設定的w&h
+    vertical-align:middle; //消除空白
+}
+
+h1,h2,h3{
+    font-weight: bold;
+}
+
+h1{
+    font-size: $base-font-size*4;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}

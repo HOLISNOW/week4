@@ -1,23 +1,24 @@
-$color: #00cc99;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet');
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import 'base/reset'; //reset.css
+@import 'helpers/variables'; //變數
+@import 'layout/grid'; //裝置容器尺寸
+@import 'helpers/mixin'; //全域變數與Mixin
+@import 'base/base'; //全站樣式 body那些
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+// layout 頭尾
+@import 'layout/header';
+@import 'layout/footer';
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+// helpers 學學姊的分類  背景 文字 間隔 flex 尺寸設定
+@import 'helpers/background';
+@import 'helpers/text';
+@import 'helpers/spacing';
+@import 'helpers/flex';
+@import 'helpers/sizing';
+
+// components(module) 元件
+
+// page
+@import 'page/index';
+

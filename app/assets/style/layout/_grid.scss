@@ -1,0 +1,45 @@
+
+@mixin pc-1024 {
+    @media (max-width: 1024px) {
+        @content
+    }
+};
+
+@mixin pad-768 {
+    @media (max-width: 768px) {
+        @content
+    }
+};
+@mixin pad-650 {
+    @media (max-width: 650px) {
+        @content
+    }
+};
+@mixin phone-576 {
+    @media (max-width: 576px) {
+        @content
+    }
+};
+
+@mixin phone-375 {
+    @media (max-width: 375px) {
+        @content
+    }
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include pc-1024{
+        max-width: 100%;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    @include phone-576{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+//陽春基本上設定平板768px手機375px兩個就好
